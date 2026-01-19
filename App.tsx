@@ -1,9 +1,10 @@
-import { StyleSheet, TextInput, View } from "react-native";
-import { KeyboardAvoidingView, KeyboardProvider } from "react-native-keyboard-controller";
+import { StyleSheet, TextInput, useWindowDimensions, View } from "react-native";
 export default function App() {
+    const { height: screenHeight, width } = useWindowDimensions();
+    console.log(111, screenHeight, width);
     return (
-        <KeyboardProvider>
-            <KeyboardAvoidingView style={{ flex: 1, padding: 16 }} behavior="padding">
+        <View>
+            <View style={{ flex: 1, padding: 16 }}>
                 <View style={{ flex: 1, gap: 10 }}>
                     <TextInput placeholder="Enter your name" style={styles.input} />
                     <TextInput placeholder="Enter your name" style={styles.input} />
@@ -11,8 +12,8 @@ export default function App() {
                 <View style={{ backgroundColor: "gray", height: 60 }}>
                     <TextInput placeholder="Enter your name" style={styles.input} />
                 </View>
-            </KeyboardAvoidingView>
-        </KeyboardProvider>
+            </View>
+        </View>
     );
 }
 
