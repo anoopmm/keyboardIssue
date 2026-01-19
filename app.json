@@ -13,16 +13,6 @@
       "bundleIdentifier": "com.anooppremio.myapp"
     },
     "android": {
-      "launchMode": "singleTask",
-      "configChanges": [
-        "keyboard",
-        "keyboardHidden",
-        "orientation",
-        "screenSize",
-        "uiMode",
-        "screenLayout",
-        "smallestScreenSize"
-      ],
       "adaptiveIcon": {
         "backgroundColor": "#E6F4FE",
         "foregroundImage": "./assets/images/android-icon-foreground.png",
