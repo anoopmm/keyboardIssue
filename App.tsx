@@ -1,7 +1,7 @@
 import { StyleSheet, TextInput, useWindowDimensions, View } from "react-native";
 export default function App() {
     const { height: screenHeight, width } = useWindowDimensions();
-    console.log(111, screenHeight, width);
+    console.log('check this logs:', screenHeight, width);
     return (
         <View>
             <View style={{ flex: 1, padding: 16 }}>
